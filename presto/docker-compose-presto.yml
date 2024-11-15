@@ -1,0 +1,17 @@
+services:
+  # Presto for SQL querying on Iceberg tables
+  presto:
+    image: prestodb/presto:latest
+    container_name: presto
+    # networks:
+    #   - iceberg_net
+    environment:
+      - PRESTO_SERVER_PORT=8080
+      - PRESTO_CATALOGS=my_catalog  # Name of the catalog to use
+    ports:
+      - 8089:8080  # Presto server's default port
+    volumes:
+      - ./presto/etc:/etc/presto  # Mount Presto configuration files
+
+# networks:
+#   iceberg_net: {}  # Docker Compose will create this network automatically

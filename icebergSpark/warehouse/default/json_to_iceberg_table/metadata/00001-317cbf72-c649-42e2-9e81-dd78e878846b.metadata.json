@@ -1,0 +1,132 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "459925ab-90d6-4629-9a70-d2862baa4fac",
+  "location" : "/home/iceberg/warehouse/default/json_to_iceberg_table",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1731584922278,
+  "last-column-id" : 12,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "Id",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "Timestamp",
+      "required" : false,
+      "type" : "timestamptz"
+    }, {
+      "id" : 3,
+      "name" : "ReferenceId",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "AppIdentificator",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "PaymentType",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 6,
+      "name" : "PaymentProvider",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 7,
+      "name" : "Country",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 8,
+      "name" : "TenantId",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 9,
+      "name" : "Amount",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 10,
+      "name" : "Units",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 11,
+      "name" : "TotalAmount",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 12,
+      "name" : "Payload",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ {
+      "name" : "Timestamp_day",
+      "transform" : "day",
+      "source-id" : 2,
+      "field-id" : 1000
+    } ]
+  } ],
+  "last-partition-id" : 1000,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "root",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 4385648597903590675,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 4385648597903590675,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 4385648597903590675,
+    "timestamp-ms" : 1731584922278,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1731584876247",
+      "added-data-files" : "763",
+      "added-records" : "1000",
+      "added-files-size" : "3418092",
+      "changed-partition-count" : "763",
+      "total-records" : "1000",
+      "total-files-size" : "3418092",
+      "total-data-files" : "763",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "/home/iceberg/warehouse/default/json_to_iceberg_table/metadata/snap-4385648597903590675-1-ed34dcf4-f8f4-4f20-a3b8-5567b7ea2c81.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1731584922278,
+    "snapshot-id" : 4385648597903590675
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1731584882545,
+    "metadata-file" : "/home/iceberg/warehouse/default/json_to_iceberg_table/metadata/00000-57d0cf54-d7b2-4e81-81fc-f190ab415ab0.metadata.json"
+  } ]
+}

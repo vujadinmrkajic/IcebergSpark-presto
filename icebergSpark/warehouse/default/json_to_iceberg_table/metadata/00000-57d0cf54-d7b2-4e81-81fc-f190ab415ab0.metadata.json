@@ -1,0 +1,101 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "459925ab-90d6-4629-9a70-d2862baa4fac",
+  "location" : "/home/iceberg/warehouse/default/json_to_iceberg_table",
+  "last-sequence-number" : 0,
+  "last-updated-ms" : 1731584882545,
+  "last-column-id" : 12,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "Id",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "Timestamp",
+      "required" : false,
+      "type" : "timestamptz"
+    }, {
+      "id" : 3,
+      "name" : "ReferenceId",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "AppIdentificator",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "PaymentType",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 6,
+      "name" : "PaymentProvider",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 7,
+      "name" : "Country",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 8,
+      "name" : "TenantId",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 9,
+      "name" : "Amount",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 10,
+      "name" : "Units",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 11,
+      "name" : "TotalAmount",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 12,
+      "name" : "Payload",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ {
+      "name" : "Timestamp_day",
+      "transform" : "day",
+      "source-id" : 2,
+      "field-id" : 1000
+    } ]
+  } ],
+  "last-partition-id" : 1000,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "root",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : -1,
+  "refs" : { },
+  "snapshots" : [ ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ ],
+  "metadata-log" : [ ]
+}
